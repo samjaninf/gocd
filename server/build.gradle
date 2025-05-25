@@ -223,8 +223,10 @@ dependencies {
   copyOnlyTestData project(path: ':test:test-agent', configuration: 'runtimeElements')
 
   implementation project.deps.commonsCodec
+  implementation project.deps.commonsCollections4
   implementation project.deps.commonsDbcp
   implementation project.deps.commonsLang3
+  implementation project.deps.jodaTime
 
   api(project.deps.hibernate) {
     exclude(module: 'ehcache-core')
